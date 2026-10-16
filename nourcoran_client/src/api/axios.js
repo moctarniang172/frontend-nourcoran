@@ -1,9 +1,10 @@
 import axios from "axios";
-import { config } from "../../../../backend/src/config/conf.config";
+// import { config } from "../../../../backend/src/config/conf.config";
 const api = axios.create({
     baseURL: 'http://localhost:5000/api',
-    headers:{
-        "Content-Type": 'applicatoion/json',
+    headers: {
+        'Content-Type': 'application/json',
+    
     }
 });
 api.interceptors.request.use((config) =>{
